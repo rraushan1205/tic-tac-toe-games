@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Tic Tac Toe</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="mainboard">
+  <h1>Tic Tac Toe</h1>
+  <div id="mode-selection">
+    <button onclick="selectMode('single')"><img height="150" width="150" src="https://static.thenounproject.com/png/5208289-200.png" alt=""></button>
+    <button onclick="selectMode('multi')"><img height="150" width="150" src="https://cdn-icons-png.flaticon.com/512/119/119686.png" alt=""></button>
+  </div>
+  <div id="board" style="display: none;">
+    <div class="row">
+      <div id="cell1" class="cell" onclick="makeMove(0, 0)"></div>
+      <div id="cell1" class="cell" onclick="makeMove(0, 1)"></div>
+      <div id="cell2" class="cell" onclick="makeMove(0, 2)"></div>
+    </div>
+    <div class="row">
+      <div id="cell1" class="cell" onclick="makeMove(1, 0)"></div>
+      <div id="cell1" class="cell" onclick="makeMove(1, 1)"></div>
+      <div id="cell2" class="cell" onclick="makeMove(1, 2)"></div>
+    </div>
+    <div class="row">
+      <div id="cell1" style="border-bottom: none;" class="cell" onclick="makeMove(2, 0)"></div>
+      <div id="cell1" style="border-bottom: none;" class="cell" onclick="makeMove(2, 1)"></div>
+      <div id="cell2" style="border-bottom: none;" class="cell" onclick="makeMove(2, 2)"></div>
+    </div>
+  </div>
+  <div id="message"></div>
+  <button id="rst" onclick="resetBoard()" style="display: none;">Reset</button>
+</div>
+  <script src="script.js"></script>
+</body>
+</html>
